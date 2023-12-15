@@ -162,6 +162,13 @@ ul {
   margin: 0;
 }
 
+.container-opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .tabs {
     padding-left: 0;
