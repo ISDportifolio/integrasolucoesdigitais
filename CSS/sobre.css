@@ -81,42 +81,11 @@
 .circle:hover .circle-description,
 .circle:active .circle-description {
   display: block;
-  transform: translateY(0%);
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-  border-radius: 50%; /* Torna o card circular */
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do card circular */
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 50%; /* Torna os lados do card circular */
-}
-
-.flip-card-back {
+.circle:hover .circle-title,
+.circle:active .circle-title {
+  display: block;
   transform: rotateY(180deg);
 }

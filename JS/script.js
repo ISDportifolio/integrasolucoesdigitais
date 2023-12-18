@@ -60,21 +60,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
   //   });
   // }
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-  const circles = document.querySelectorAll('.circle');
-
-  circles.forEach((circle) => {
-    circle.addEventListener('click', function () {
-      circles.forEach((c) => {
-        if (c !== circle) {
-          c.style.transform = 'scale(1)';
-          c.querySelector('.circle-description').style.display = 'none';
-        }
-      });
-
-      circle.style.transform = 'scale(1.1)';
-      circle.querySelector('.circle-description').style.display = 'block';
-    });
-  });
-});
