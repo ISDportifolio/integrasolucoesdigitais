@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/wbe8kkj.css">
   <link rel="stylesheet" href="https://use.typekit.net/flw5myi.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="icon" href="/logo_ISD.svg" type="image/svg+xml">
   <script type="text/javascript" src="./JS/script.js"></script>
 </head>
@@ -16,6 +17,9 @@
 <body>
 
   <body>
+    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511992072416" target="_blank">
+      <i class="fa fa-whatsapp"></i>
+    </a>
     <header class="sticky">
       <div class="header container ">
         <a href="">
@@ -26,7 +30,7 @@
             <li><a class="font-1-l menuglobal" href="#quemsomos">Quem Somos</a></li>
             <li><a class="font-1-l menuglobal" href="#sobre">Sobre</a></li>
             <li><a class="font-1-l menuglobal" href="#contato">Contato</a></li>
-            <li><a class="font-1-l botaoseta" href="#orcamento">Faça um Orçamento</a></li>
+            <li><a class="font-1-l botaoseta" href="#contato">Faça um Orçamento</a></li>
             <li><a class="font-1-l menuglobal" href="#login">Login</a></li>
           </ul>
         </nav>
@@ -193,14 +197,20 @@
         <section class="contato-dados" aria-label="Endereço">
           <h2 class="font-1-xl cor-0">Trnasformando o papel em possibilidades digitais!</h2>
           <h3 class="font-1-l cor-0">Entre em contato:</h3>
-
+          <div class="contato-redes">
+            <a href="https://www.instagram.com/integrasolucoesdigitais/">
+              <img src="./img/instagram-p.svg" alt="Instagram">
+            </a>
+            <a href="http://wa.me/+5511992072416">
+              <img src="./img/whatsapp.svg" alt="Whatsapp">
+            </a>
+            <a href="https://www.linkedin.com/company/integra-soluções-digitais/">
+              <img src="./img/linkedin.svg" alt="Linkedin">
+            </a>
+          </div>
         </section>
         <section class="contato-formulario" aria-label="formulario">
-          <form class="form">
-            <div class="col-2 nao-visivel font-2-m cor-12">
-              <label for="data">Data de envio</label>
-              <input type="text" id="data" name="data" readonly>
-            </div>
+          <form class="form" action="processar_formulario.php" method="post">
             <div class="font-2-m cor-12">
               <label for="nome">Nome</label>
               <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
@@ -209,7 +219,7 @@
               <label for="Sobrenome">Sobrenome</label>
               <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Seu Sobrenome" required>
             </div>
-            <div class="font-2-m cor-12">
+            <div class="col-2 font-2-m cor-12">
               <label for="telefone">Telefone</label>
               <input type="tel" id="telefone" name="telefone" placeholder="(11)99999-9999" onkeyup="handlePhone(event)" maxlength="15" required>
             </div>
@@ -219,28 +229,43 @@
             </div>
             <div class="col-2 font-2-m cor-12">
               <label for="mensagem">O que você procura?</label>
-              <input type="text" id="mensagem" name="mensagem" placeholder="Digite aqui sua mensagem" autocomplete="on" required>
+              <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite aqui sua mensagem" autocomplete="on" required></textarea>
             </div>
-            <button class="botao-form" type="submit">
+            <button class="botao-form" type="submit" value="enviar">
               Enviar
             </button>
-            <div id="mensagem" style="display: none;"></div>
+            <div id="enviado" style="display: none;"></div>
           </form>
         </section>
       </div>
     </div>
 
 
-    <footer class="footer-prefeitura">
-      <img src="./img/logo_prefeitura.png" alt="">
-      <nav>
-        <ul>
-          <li><a href="" class="excluir-alerta">Curso Preparatório</a></li>
-          <li><a href="cursos" class="excluir-alerta">Editais</a></li>
-          <li><a href="Editais" class="excluir-alerta">Cadastro</a></li>
-        </ul>
-        <p> © todos os direitos reservados.</p>
+    <footer class="footer-bg">
+      <div class="footer container">
+        <img class="logo-footer" src="./img/ISD-logo_transp_PNG 1.png" alt="ISD">
+        <div class="footer-contato">
+          <h3 class="font-2-1-b cor-12">Informações</h3>
+          <ul class="font-2-1-b cor-6">
+            <li><a href="#quemsomos">Quem Somos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <div class="footer-redes">
+            <a href="https://www.instagram.com/integrasolucoesdigitais/">
+              <img src="./img/instagram-c5.svg" alt="Instagram">
+            </a>
+            <a href="http://wa.me/+5511992072416">
+              <img src="./img/whatsapp-c5.svg" alt="Whatsapp">
+            </a>
+            <a href="https://www.linkedin.com/company/integra-soluções-digitais/">
+              <img src="./img/linkedin-c5.svg" alt="Linkedin">
+            </a>
+          </div>
+        </div>
 
+        <p class="footer-copy font-2-m cor-6">© 2023 ISD Integra Soluções Digitais. Todos os direitos reservados. </p>
+      </div>
     </footer>
 
   </body>

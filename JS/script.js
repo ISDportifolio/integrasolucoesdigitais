@@ -60,3 +60,61 @@ document.addEventListener('DOMContentLoaded', (event) => {
   //   });
   // }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const button = document.querySelector('.botao-form');
+  const mensagem = document.getElementById('enviado');
+
+  const showSuccessMessage = () => {
+    mensagem.innerText = 'Formulário enviado! Em breve entraremos em contato!';
+    mensagem.style.display = 'block';
+  };
+
+  const addLoading = () => {
+    button.innerHTML =
+      '<img src="./img/loading_svgrepo.com.png" class="loading">';
+  };
+
+  const removeLoading = () => {
+    button.innerHTML = 'Enviar';
+  };
+
+  const clearFields = () => {
+    document.querySelector('input[name=nome]').value = '';
+    document.querySelector('input[name=Sobrenome]').value = '';
+    document.querySelector('input[name=telefone]').value = '';
+    document.querySelector('input[name=email]').value = '';
+    document.querySelector('textarea[name=mensagem]').value = '';
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    addLoading();
+    const nome = document.querySelector('input[name=nome]').value;
+    const telefone = document.querySelector('input[name=telefone]').value;
+    const email = document.querySelector('input[name=email]').value;
+    const Sobrenome = document.querySelector('input[name=Sobrenome]').value;
+    const mensagem = document.querySelector('textarea[name=mensagem]').value;
+
+    fetch('https://api.sheetmonkey.io/form/rdauT5a3a8vnsNoBfVyu2a', {
+      method: 'post',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        nome,
+        telefone,
+        email,
+        Sobrenome,
+        mensagem,
+      }),
+    }).then(() => {
+      removeLoading();
+      clearFields();
+      showSuccessMessage();
+    });
+  };
+
+  document.querySelector('form').addEventListener('submit', handleSubmit);
+});

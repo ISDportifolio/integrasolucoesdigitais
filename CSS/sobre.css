@@ -89,3 +89,14 @@
   display: block;
   transform: rotateY(180deg);
 }
+
+@media (max-width: 800px) {
+  .sobre {
+    flex-direction: column;
+  }
+
+  .circle {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

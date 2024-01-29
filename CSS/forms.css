@@ -1,3 +1,55 @@
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.titulo-container {
+  grid-column: span 2;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-dados h2 {
+  margin-bottom: 60px;
+}
+
+.contato-dados,
+.contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contato-dados {
+  border-radius: 13px 0 0 13px;
+  background-image: url('../img/img-forms.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contato-formulario {
+  border-radius: 0 13px 13px 0;
+  background: var(--cor-2);
+}
+
+.contato-formulario .col-1 {
+  grid-column: span 2;
+}
+
+#mensagem {
+  color: #000000;
+}
+
+.container-forms {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 60px auto;
+}
+
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -72,6 +124,17 @@
   color: var(--cor-p1);
 }
 
+.nao-visivel {
+  display: none;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  padding-left: 28px;
+  padding-top: 28px;
+}
+
 @media (max-width: 800px) {
   .contato {
     grid-template-columns: 1fr;
@@ -119,54 +182,6 @@
   .contato-dados a {
     font-size: 16px;
   }
-}
-
-.container-forms {
-  box-sizing: border-box;
-  max-width: 100%;
-  padding: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--cor-12);
-}
-
-.titulo-container {
-  grid-column: span 2;
-}
-
-.contato {
-  display: grid;
-  grid-template-columns: 5fr 7fr;
-}
-
-.contato-dados h2 {
-  margin-bottom: 60px;
-}
-
-.contato-dados,
-.contato-formulario {
-  padding: 60px;
-  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contato-dados {
-  border-radius: 13px 0 0 13px;
-  background-image: url('../img/img-forms.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.contato-formulario {
-  border-radius: 0 13px 13px 0;
-  background: var(--cor-2);
-}
-
-.contato-formulario .col-1 {
-  grid-column: span 2;
-}
-
-#mensagem {
-  color: #000000;
 }
 
 @media (max-width: 800px) {
