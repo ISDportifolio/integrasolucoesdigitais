@@ -118,3 +118,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelector('form').addEventListener('submit', handleSubmit);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtém o elemento do link de login
+  var loginLink = document.getElementById('loginLink');
+
+  // Adiciona um ouvinte de clique ao link de login
+  loginLink.addEventListener('click', function (event) {
+    // Impede o comportamento padrão do link (navegação)
+    event.preventDefault();
+
+    // Exibe a mensagem de aviso
+    alert(
+      'Este recurso ainda não está disponível! Mas não se preocupe, em breve ele estará no ar!',
+    );
+  });
+});
