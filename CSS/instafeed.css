@@ -1,0 +1,25 @@
+.instafeed {
+  margin: 40px;
+}
+
+.post {
+  position: relative;
+}
+
+.post::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Começa com escala zero (ícone pequeno) */
+  width: 50px;
+  height: 50px;
+  background: url('/img/instagram-b.svg') no-repeat center center / contain;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in; /* Adiciona a transição para a escala */
+}
+
+.post:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); /* Termina com escala 1 (ícone no tamanho desejado) */
+}

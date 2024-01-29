@@ -12,263 +12,296 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="icon" href="/logo_ISD.svg" type="image/svg+xml">
   <script type="text/javascript" src="./JS/script.js"></script>
+  <script type="text/javascript" src="JS/instafeed.min.js"></script>
+  <script src="JS/jquery.min.js"></script>
+  <script src="JS/owl.carousel.min.js"></script>
 </head>
 
 <body>
-
-  <body>
-    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511992072416" target="_blank">
-      <i class="fa fa-whatsapp"></i>
-    </a>
-    <header class="sticky">
-      <div class="header container ">
-        <a href="">
-          <img src="./img/logo_branco_escrita.png" width="100" height="27" alt="logo">
-        </a>
-        <nav arial-label="primaria">
-          <ul class="header-menu">
-            <li><a class="font-1-l menuglobal" href="#quemsomos">Quem Somos</a></li>
-            <li><a class="font-1-l menuglobal" href="#sobre">Sobre</a></li>
-            <li><a class="font-1-l menuglobal" href="#contato">Contato</a></li>
-            <li><a class="font-1-l botaoseta" href="#contato">Faça um Orçamento</a></li>
-            <li><a class="font-1-l menuglobal" href="#login" id="loginLink">Login</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <article class="capa">
-      <div class="capa-content">
-        <h1 class="font-1-xxl">Integra Soluções Digitais</h1>
-        <h2 class="font-2-l-b">Transformando o papel em possibilidades digitais!</h2>
-        <p class="font-2-xl">Especializados em digitalização de documentos, gerenciamento seguro de arquivos, guarda de arquivos e armazenamento na nuvem</p>
-        <a href="#contato" class="botao font-2-xl">Entre em contato!</a>
-      </div>
-    </article>
-
-
-    <article class="intro">
-      <h1 class="font-1-xxl">Por quê contratar a Integra?</h1>
-      <div class="caixa animate-on-scroll">
-        <div class="column">
-          <div class="item">
-            <img src="./img/icone_pasta.svg" alt="Pasta">
-            <div class="content">
-              <h3 class="font-2-xl">Guarda de arquivos de todos os tipos</h3>
-              <p class="font-2-l">Deixe seus documentos em boas mãos! Garantimos segurança e fácil acesso sempre que precisar.</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="./img/icone_impressora.svg" alt="Digitalização">
-            <div class="content">
-              <h3 class="font-2-xl">Digitalização de todos os tipos de documentos de papel</h3>
-              <p class="font-2-l">Adeus papelada! Transformamos seus documentos físicos em versões digitais, facilitando sua via e preservando a informação.</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="./img/icone_organizacao.svg" alt="Organização">
-            <div class="content">
-              <h3 class="font-2-xl">Organização de arquivos físicos e digitais</h3>
-              <p class="font-2-l">Seja no mundo físico ou virtual, a organização é a chave para o sucesso. Deixe-nos cuidar da ordem para você focar no que realmente importa!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="item">
-            <img src="./img/icone_notebook.svg" alt="Notebook">
-            <div class="content">
-              <h3 class="font-2-xl">Digitação de documentos</h3>
-              <p class="font-2-l">Rapidez e precisão! Conte conosco para transformar manuscritos e documentos em digitais, economizando tempo e esforço.</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="./img/icone_destruir.svg" alt="Fragmentadora">
-            <div class="content">
-              <h3 class="font-2-xl">Destruição segura de documentos confidenciais</h3>
-              <p class="font-2-l">Privacidade em primeiro lugar! Garantimos a eliminação segura de documentos confidenciais, protegendo suas informações sensíveis.</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="./img/icone_nuvem.svg" alt="Nuvem">
-            <div class="content">
-              <h3 class="font-2-xl">Guarda de documentos em nuvem</h3>
-              <p class="font-2-l">Leve seus documentos para o próximo nível! Armazenamento seguro na nuvem para acesso em qualquer lugar, a qualquer momento.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <article id="quemsomos" class="quemsomos">
-      <h1 class="font-1-xxl cor-p1">Quem Somos?</h1>
-      <div class="descricao-quemsomos">
-        <img src="./img/quemsomos_img1.jpg" alt="Imagem 1">
-        <p class="font-2-l">A Integra Soluções Digitais é uma empresa especializada em proporcionar soluções avançadas para a gestão de documentos, com um compromisso firme com a excelência e a inovação. Fundada com a visão de revolucionar a forma como as empresas gerenciam seus arquivos, oferecemos serviços de digitalização de documentos, gerenciamento seguro de arquivos, guarda de documentos e armazenamento na nuvem.</p>
-      </div>
-
-      <div class="container-opcoes">
-        <ul class="tabs">
-          <li><a id="botao1" class="font-2-xl">Visão</a></li>
-          <li><a id="botao2" class="inactive font-2-xl">Missão</a></li>
-          <li><a id="botao3" class="inactive font-2-xl">Valores</a></li>
+  <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511992072416" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+  <header class="sticky">
+    <div class="header container ">
+      <a href="">
+        <img src="./img/logo_branco_escrita.png" width="100" height="27" alt="logo">
+      </a>
+      <nav arial-label="primaria">
+        <ul class="header-menu">
+          <li><a class="font-1-l menuglobal" href="#quemsomos">Quem Somos</a></li>
+          <li><a class="font-1-l menuglobal" href="#sobre">Sobre</a></li>
+          <li><a class="font-1-l menuglobal" href="#contato">Contato</a></li>
+          <li><a class="font-1-l botaoseta" href="#contato">Faça um Orçamento</a></li>
+          <li><a class="font-1-l menuglobal" href="#login" id="loginLink">Login</a></li>
         </ul>
-        <div id="descricao-unidade" class="unidades-descricao-container">
-          <ul>
-            <li style="display: list-item" id="text1">
-              <div>
-                <h2 class="font-2-xl cor-p1">Visão</h2>
-                <p class="font-2-l">Nossa <span class="cor-p1">Visão</span> é ser reconhecida como a principal parceira de soluções digitais, impulsionando a transformação e a eficiência em diversos setores, por meio de inovação e compromisso com a excelência</p>
-              </div>
-            </li>
+      </nav>
+    </div>
+  </header>
 
-            <li style="display: none" id="text2">
-              <div>
-                <h2 class="font-2-xl cor-p2">Missão</h2>
-                <p class="font-2-l">Nossa <span class="cor-p2">Missão</span> é oferecer soluções digitais inovadoras e personalizadas, simplificando a gestão de documentos e promovendo a organização eficiente, para potencializar o sucesso e a produtividade de nossos clientes.</p>
-              </div>
-            </li>
+  <article class="capa">
+    <div class="capa-content">
+      <h1 class="font-1-xxl">Integra Soluções Digitais</h1>
+      <h2 class="font-2-l-b">Transformando o papel em possibilidades digitais!</h2>
+      <p class="font-2-xl">Especializados em digitalização de documentos, gerenciamento seguro de arquivos, guarda de arquivos e armazenamento na nuvem</p>
+      <a href="#contato" class="botao font-2-xl">Entre em contato!</a>
+    </div>
+  </article>
 
-            <li style="display: none" id="text3">
-              <div>
-                <h2 class="font-2-xl cor-p3">Valores</h2>
-                <ul class="font-2-l lista-valores">
-                  <li><span class="cor-p3">Inovação:</span> Buscamos continuamente soluções criativas e tecnologicamente avançadas para atender às necessidades em constante evolução de nossos clientes.</li>
-                  <li><span class="cor-p3">Compromisso com o Cliente:</span> Colocamos os interesses e as necessidades de nossos clientes em primeiro lugar, mantendo um compromisso constante com a entrega de serviços de alta qualidade e valor agregado.</li>
-                  <li><span class="cor-p3">Integridade:</span> Agimos com ética, transparência e responsabilidade em todas as interações, construindo relações de confiança com clientes, colaboradores e parceiros.</li>
-                  <li><span class="cor-p3">Colaboração:</span> Reconhecemos e valorizamos a diversidade de habilidades e perspectivas, promovendo um ambiente de trabalho colaborativo que estimula a inovação.</li>
-                  <li><span class="cor-p3">Eficiência:</span> Buscamos a eficiência em todos os processos, otimizando recursos e garantindo resultados ágeis e impactantes para nossos clientes.</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-        </li>
-        </ul>
-      </div>
-      </div>
-    </article>
+  <article class="instafeed font-1-xl cor-0">
+    <h1>Confira nosso instagram!</h1>
+    <div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag"></div>
+  </article>
 
-
-
-    <article id="sobre">
-      <h1 class="font-1-xxl cor-1 titulo-sobre">Sobre a Integra</h1>
-      <div class="sobre">
-
-        <div class="circle" id="doc-digitalization">
-          <div class="circle-content">
-            <h2 class="circle-title font-2-l-b cor-p1">Digitalização de Documentos</h2>
-            <p class="circle-description font-2-xl cor-0">Transformamos pilhas de papéis em arquivos digitais organizados, facilitando a busca e o acesso instantâneo a informações essenciais. Eliminamos a necessidade de salas de arquivo abarrotadas, substituindo-as por arquivos digitais de fácil navegação.</p>
+  <article class="intro">
+    <h1 class="font-1-xxl">Por quê contratar a Integra?</h1>
+    <div class="caixa animate-on-scroll">
+      <div class="column">
+        <div class="item">
+          <img src="./img/icone_pasta.svg" alt="Pasta">
+          <div class="content">
+            <h3 class="font-2-xl">Guarda de arquivos de todos os tipos</h3>
+            <p class="font-2-l">Deixe seus documentos em boas mãos! Garantimos segurança e fácil acesso sempre que precisar.</p>
           </div>
         </div>
 
-        <div class="circle" id="file-management">
-          <div class="circle-content">
-            <h2 class="circle-title font-2-l-b cor-p1">Gerenciamento Seguro de Arquivos</h2>
-            <p class="circle-description font-2-xl cor-0">A segurança dos seus documentos é nossa prioridade. Utilizamos tecnologias de última geração para proteger suas informações confidenciais contra ameaças e acessos não autorizados.</p>
+        <div class="item">
+          <img src="./img/icone_impressora.svg" alt="Digitalização">
+          <div class="content">
+            <h3 class="font-2-xl">Digitalização de todos os tipos de documentos de papel</h3>
+            <p class="font-2-l">Adeus papelada! Transformamos seus documentos físicos em versões digitais, facilitando sua via e preservando a informação.</p>
           </div>
         </div>
 
-        <div class="circle" id="cloud-storage">
-          <div class="circle-content">
-            <h2 class="circle-title font-2-l-b cor-p1">Armazenamento na Nuvem</h2>
-            <p class="circle-description font-2-xl cor-0">Facilitamos o acesso aos seus documentos a partir de qualquer lugar, a qualquer momento, com nosso serviço de armazenamento na nuvem. Isso garante a mobilidade e a flexibilidade necessárias para os negócios modernos.</p>
-          </div>
-        </div>
-
-        <div class="circle" id="document-archiving">
-          <div class="circle-content">
-            <h2 class="circle-title font-2-l-b cor-p1">Guarda de Documentos</h2>
-            <p class="circle-description font-2-xl cor-0">Dispomos de instalações seguras para a guarda de documentos físicos, assegurando que eles estejam sempre acessíveis quando necessário, enquanto são mantidos em um ambiente controlado e protegido.</p>
+        <div class="item">
+          <img src="./img/icone_organizacao.svg" alt="Organização">
+          <div class="content">
+            <h3 class="font-2-xl">Organização de arquivos físicos e digitais</h3>
+            <p class="font-2-l">Seja no mundo físico ou virtual, a organização é a chave para o sucesso. Deixe-nos cuidar da ordem para você focar no que realmente importa!</p>
           </div>
         </div>
       </div>
-    </article>
 
-    <div id="contato">
-      <div class="contato container-forms">
-        <div class="titulo-container">
-          <h1 class="font-1-xl cor-0">Entre em contato!</h1>
-        </div>
-        <section class="contato-dados" aria-label="Endereço">
-          <h2 class="font-1-xl cor-0">Trnasformando o papel em possibilidades digitais!</h2>
-          <h3 class="font-1-l cor-0">Entre em contato:</h3>
-          <div class="contato-redes">
-            <a href="https://www.instagram.com/integrasolucoesdigitais/" target="_blank">
-              <img src="./img/instagram-p.svg" alt="Instagram">
-            </a>
-            <a href="http://wa.me/+5511992072416" target="_blank">
-              <img src="./img/whatsapp.svg" alt="Whatsapp">
-            </a>
-            <a href="https://www.linkedin.com/company/integra-soluções-digitais/" target="_blank">
-              <img src="./img/linkedin.svg" alt="Linkedin">
-            </a>
+      <div class="column">
+        <div class="item">
+          <img src="./img/icone_notebook.svg" alt="Notebook">
+          <div class="content">
+            <h3 class="font-2-xl">Digitação de documentos</h3>
+            <p class="font-2-l">Rapidez e precisão! Conte conosco para transformar manuscritos e documentos em digitais, economizando tempo e esforço.</p>
           </div>
-        </section>
-        <section class="contato-formulario" aria-label="formulario">
-          <form class="form" action="processar_formulario.php" method="post">
-            <div class="font-2-m cor-12">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-            </div>
-            <div class="font-2-m cor-12">
-              <label for="Sobrenome">Sobrenome</label>
-              <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Seu Sobrenome" required>
-            </div>
-            <div class="col-2 font-2-m cor-12">
-              <label for="telefone">Telefone</label>
-              <input type="tel" id="telefone" name="telefone" placeholder="(11)99999-9999" onkeyup="handlePhone(event)" maxlength="15" required>
-            </div>
-            <div class="col-2 font-2-m cor-12">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="contato@email.com.br" autocomplete="on" required>
-            </div>
-            <div class="col-2 font-2-m cor-12">
-              <label for="mensagem">O que você procura?</label>
-              <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite aqui sua mensagem" autocomplete="on" required></textarea>
-            </div>
-            <button class="botao-form" type="submit" value="enviar">
-              Enviar
-            </button>
-            <div id="enviado" style="display: none;"></div>
-          </form>
-        </section>
+        </div>
+
+        <div class="item">
+          <img src="./img/icone_destruir.svg" alt="Fragmentadora">
+          <div class="content">
+            <h3 class="font-2-xl">Destruição segura de documentos confidenciais</h3>
+            <p class="font-2-l">Privacidade em primeiro lugar! Garantimos a eliminação segura de documentos confidenciais, protegendo suas informações sensíveis.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="./img/icone_nuvem.svg" alt="Nuvem">
+          <div class="content">
+            <h3 class="font-2-xl">Guarda de documentos em nuvem</h3>
+            <p class="font-2-l">Leve seus documentos para o próximo nível! Armazenamento seguro na nuvem para acesso em qualquer lugar, a qualquer momento.</p>
+          </div>
+        </div>
       </div>
     </div>
+  </article>
 
+  <article id="quemsomos" class="quemsomos">
+    <h1 class="font-1-xxl cor-p1">Quem Somos?</h1>
+    <div class="descricao-quemsomos">
+      <img src="./img/quemsomos_img1.jpg" alt="Imagem 1">
+      <p class="font-2-l">A Integra Soluções Digitais é uma empresa especializada em proporcionar soluções avançadas para a gestão de documentos, com um compromisso firme com a excelência e a inovação. Fundada com a visão de revolucionar a forma como as empresas gerenciam seus arquivos, oferecemos serviços de digitalização de documentos, gerenciamento seguro de arquivos, guarda de documentos e armazenamento na nuvem.</p>
+    </div>
 
-    <footer class="footer-bg">
-      <div class="footer container">
-        <img class="logo-footer" src="./img/ISD-logo_transp_PNG 1.png" alt="ISD">
-        <div class="footer-contato">
-          <h3 class="font-2-1-b cor-12">Informações</h3>
-          <ul class="font-2-1-b cor-6">
-            <li><a href="#quemsomos">Quem Somos</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-          <div class="footer-redes">
-            <a href="https://www.instagram.com/integrasolucoesdigitais/" target="_blank">
-              <img src="./img/instagram-c5.svg" alt="Instagram">
-            </a>
-            <a href="http://wa.me/+5511992072416" target="_blank">
-              <img src="./img/whatsapp-c5.svg" alt="Whatsapp">
-            </a>
-            <a href="https://www.linkedin.com/company/integra-soluções-digitais/" target="_blank">
-              <img src="./img/linkedin-c5.svg" alt="Linkedin">
-            </a>
-          </div>
-        </div>
+    <div class="container-opcoes">
+      <ul class="tabs">
+        <li><a id="botao1" class="font-2-xl">Visão</a></li>
+        <li><a id="botao2" class="inactive font-2-xl">Missão</a></li>
+        <li><a id="botao3" class="inactive font-2-xl">Valores</a></li>
+      </ul>
+      <div id="descricao-unidade" class="unidades-descricao-container">
+        <ul>
+          <li style="display: list-item" id="text1">
+            <div>
+              <h2 class="font-2-xl cor-p1">Visão</h2>
+              <p class="font-2-l">Nossa <span class="cor-p1">Visão</span> é ser reconhecida como a principal parceira de soluções digitais, impulsionando a transformação e a eficiência em diversos setores, por meio de inovação e compromisso com a excelência</p>
+            </div>
+          </li>
 
-        <p class="footer-copy font-2-m cor-6">© 2023 ISD Integra Soluções Digitais. Todos os direitos reservados. </p>
+          <li style="display: none" id="text2">
+            <div>
+              <h2 class="font-2-xl cor-p2">Missão</h2>
+              <p class="font-2-l">Nossa <span class="cor-p2">Missão</span> é oferecer soluções digitais inovadoras e personalizadas, simplificando a gestão de documentos e promovendo a organização eficiente, para potencializar o sucesso e a produtividade de nossos clientes.</p>
+            </div>
+          </li>
+
+          <li style="display: none" id="text3">
+            <div>
+              <h2 class="font-2-xl cor-p3">Valores</h2>
+              <ul class="font-2-l lista-valores">
+                <li><span class="cor-p3">Inovação:</span> Buscamos continuamente soluções criativas e tecnologicamente avançadas para atender às necessidades em constante evolução de nossos clientes.</li>
+                <li><span class="cor-p3">Compromisso com o Cliente:</span> Colocamos os interesses e as necessidades de nossos clientes em primeiro lugar, mantendo um compromisso constante com a entrega de serviços de alta qualidade e valor agregado.</li>
+                <li><span class="cor-p3">Integridade:</span> Agimos com ética, transparência e responsabilidade em todas as interações, construindo relações de confiança com clientes, colaboradores e parceiros.</li>
+                <li><span class="cor-p3">Colaboração:</span> Reconhecemos e valorizamos a diversidade de habilidades e perspectivas, promovendo um ambiente de trabalho colaborativo que estimula a inovação.</li>
+                <li><span class="cor-p3">Eficiência:</span> Buscamos a eficiência em todos os processos, otimizando recursos e garantindo resultados ágeis e impactantes para nossos clientes.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
-    </footer>
+      </li>
+      </ul>
+    </div>
+    </div>
+  </article>
 
-  </body>
+
+
+  <article id="sobre">
+    <h1 class="font-1-xxl cor-1 titulo-sobre">Sobre a Integra</h1>
+    <div class="sobre">
+
+      <div class="circle" id="doc-digitalization">
+        <div class="circle-content">
+          <h2 class="circle-title font-2-l-b cor-p1">Digitalização de Documentos</h2>
+          <p class="circle-description font-2-xl cor-0">Transformamos pilhas de papéis em arquivos digitais organizados, facilitando a busca e o acesso instantâneo a informações essenciais. Eliminamos a necessidade de salas de arquivo abarrotadas, substituindo-as por arquivos digitais de fácil navegação.</p>
+        </div>
+      </div>
+
+      <div class="circle" id="file-management">
+        <div class="circle-content">
+          <h2 class="circle-title font-2-l-b cor-p1">Gerenciamento Seguro de Arquivos</h2>
+          <p class="circle-description font-2-xl cor-0">A segurança dos seus documentos é nossa prioridade. Utilizamos tecnologias de última geração para proteger suas informações confidenciais contra ameaças e acessos não autorizados.</p>
+        </div>
+      </div>
+
+      <div class="circle" id="cloud-storage">
+        <div class="circle-content">
+          <h2 class="circle-title font-2-l-b cor-p1">Armazenamento na Nuvem</h2>
+          <p class="circle-description font-2-xl cor-0">Facilitamos o acesso aos seus documentos a partir de qualquer lugar, a qualquer momento, com nosso serviço de armazenamento na nuvem. Isso garante a mobilidade e a flexibilidade necessárias para os negócios modernos.</p>
+        </div>
+      </div>
+
+      <div class="circle" id="document-archiving">
+        <div class="circle-content">
+          <h2 class="circle-title font-2-l-b cor-p1">Guarda de Documentos</h2>
+          <p class="circle-description font-2-xl cor-0">Dispomos de instalações seguras para a guarda de documentos físicos, assegurando que eles estejam sempre acessíveis quando necessário, enquanto são mantidos em um ambiente controlado e protegido.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <div id="contato">
+    <div class="contato container-forms">
+      <div class="titulo-container">
+        <h1 class="font-1-xl cor-0">Entre em contato!</h1>
+      </div>
+      <section class="contato-dados" aria-label="Endereço">
+        <h2 class="font-1-xl cor-0">Trnasformando o papel em possibilidades digitais!</h2>
+        <h3 class="font-1-l cor-0">Entre em contato:</h3>
+        <div class="contato-redes">
+          <a href="https://www.instagram.com/integrasolucoesdigitais/" target="_blank">
+            <img src="./img/instagram-p.svg" alt="Instagram">
+          </a>
+          <a href="http://wa.me/+5511992072416" target="_blank">
+            <img src="./img/whatsapp.svg" alt="Whatsapp">
+          </a>
+          <a href="https://www.linkedin.com/company/integra-soluções-digitais/" target="_blank">
+            <img src="./img/linkedin.svg" alt="Linkedin">
+          </a>
+        </div>
+      </section>
+      <section class="contato-formulario" aria-label="formulario">
+        <form class="form" action="processar_formulario.php" method="post">
+          <div class="font-2-m cor-12">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="font-2-m cor-12">
+            <label for="Sobrenome">Sobrenome</label>
+            <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Seu Sobrenome" required>
+          </div>
+          <div class="col-2 font-2-m cor-12">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11)99999-9999" onkeyup="handlePhone(event)" maxlength="15" required>
+          </div>
+          <div class="col-2 font-2-m cor-12">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="contato@email.com.br" autocomplete="on" required>
+          </div>
+          <div class="col-2 font-2-m cor-12">
+            <label for="mensagem">O que você procura?</label>
+            <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite aqui sua mensagem" autocomplete="on" required></textarea>
+          </div>
+          <button class="botao-form" type="submit" value="enviar">
+            Enviar
+          </button>
+          <div id="enviado" style="display: none;"></div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img class="logo-footer" src="./img/ISD-logo_transp_PNG 1.png" alt="ISD">
+      <div class="footer-contato">
+        <h3 class="font-2-1-b cor-12">Informações</h3>
+        <ul class="font-2-1-b cor-6">
+          <li><a href="#quemsomos">Quem Somos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="footer-redes">
+          <a href="https://www.instagram.com/integrasolucoesdigitais/" target="_blank">
+            <img src="./img/instagram-c5.svg" alt="Instagram">
+          </a>
+          <a href="http://wa.me/+5511992072416" target="_blank">
+            <img src="./img/whatsapp-c5.svg" alt="Whatsapp">
+          </a>
+          <a href="https://www.linkedin.com/company/integra-soluções-digitais/" target="_blank">
+            <img src="./img/linkedin-c5.svg" alt="Linkedin">
+          </a>
+        </div>
+      </div>
+
+      <p class="footer-copy font-2-m cor-6">© 2023 ISD Integra Soluções Digitais. Todos os direitos reservados. </p>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript">
+    var feed = new Instafeed({
+      accessToken: 'IGQWROR2ZApT2RWaTdNSHMxWWxBSEdJbGdhWnlrTm1wdHZABMWxOMFhwc1Nad2hXejFubXk3c0IwbjlGWnVFUDA1OHI5MUtRLVZAlOGZAFYTVtdzNORU9yQ2tibG5EVXVpNGJzNkFya1Q0bmJ5QQZDZD',
+      limit: 8,
+      template: '<div class="post"><a href="{{link}}" target="_blank"><img title="{{caption}}" src="{{image}}"/></a></div>',
+      after: function () {
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 3
+            },
+            1000: {
+              items: 5
+            }
+          }
+        })
+      }
+    });
+    feed.run();
+  </script>
+
+</body>
 
 
 
