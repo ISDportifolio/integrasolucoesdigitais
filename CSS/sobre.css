@@ -16,8 +16,9 @@
     var(--cor-p2)
   );
   background-size: 300% 300%;
-  animation: colors 10s ease infinite;
+  animation: colors 5s ease infinite;
 }
+
 @keyframes colors {
   0% {
     background-position: 0% 50%;
@@ -39,12 +40,12 @@
 
 .circle {
   flex: 1;
-  aspect-ratio: 1 / 1; /* Mantém a proporção 1:1 (círculo) */
+  aspect-ratio: 1 / 1;
   background-color: var(--cor-10);
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   perspective: 1000px;
   overflow: hidden;
   display: flex;
@@ -54,22 +55,20 @@
   margin-right: 20px;
 }
 
-.circle-content {
-  transition: transform 0.5s ease-in-out;
-}
-
 .circle:hover {
-  transform: scale(1.1) rotateY(180deg);
-}
-
-.circle:active {
-  transform: scale(1.1) rotateY(180deg);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .circle-title {
   opacity: 1;
   font-size: 1.5em;
   padding: 0 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.circle:hover .circle-title {
+  transform: translateY(-10px);
 }
 
 .circle-description {
@@ -77,27 +76,10 @@
   font-size: 1em;
   overflow: hidden;
   padding: 0px 20px;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.circle:hover .circle-description,
-.circle:active .circle-description {
+.circle:hover .circle-description {
   display: block;
-  transform: rotateY(180deg);
-}
-
-.circle:hover .circle-title,
-.circle:active .circle-title {
-  display: block;
-  transform: rotateY(180deg);
-}
-
-@media (max-width: 800px) {
-  .sobre {
-    flex-direction: column;
-  }
-
-  .circle {
-    width: 100%;
-    margin-right: 0;
-  }
+  opacity: 1;
 }
