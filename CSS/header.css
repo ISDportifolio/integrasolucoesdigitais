@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  max-height: 150px;
 }
 
 .sticky {
@@ -12,7 +13,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 150px;
   z-index: 1000;
 }
 
@@ -20,7 +21,7 @@
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
 }
 
 .header-menu a {
@@ -116,4 +117,43 @@
   .sticky {
     height: 200px;
   }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 10px; /* Adicione um preenchimento menor */
+    max-height: none; /* Remova a altura máxima para permitir ajustes */
+  }
+}
+
+/* Alert Login: */
+
+/* Estilize o modal */
+.modal {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--cor-p1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilize o botão de fechar */
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
 }

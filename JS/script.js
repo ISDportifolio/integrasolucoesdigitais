@@ -119,18 +119,51 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('form').addEventListener('submit', handleSubmit);
 });
 
+// document.addEventListener('DOMContentLoaded', function () {
+//   // Obtém o elemento do link de login
+//   var loginLink = document.getElementById('loginLink');
+
+//   // Adiciona um ouvinte de clique ao link de login
+//   loginLink.addEventListener('click', function (event) {
+//     // Impede o comportamento padrão do link (navegação)
+//     event.preventDefault();
+
+//     // Exibe a mensagem de aviso
+//     alert(
+//       'Este recurso ainda não está disponível! Mas não se preocupe, em breve ele estará no ar!',
+//     );
+//   });
+// });
+
 document.addEventListener('DOMContentLoaded', function () {
   // Obtém o elemento do link de login
   var loginLink = document.getElementById('loginLink');
+
+  // Obtém o modal
+  var modal = document.getElementById('myModal');
+
+  // Obtém o elemento de fechar no modal
+  var closeBtn = document.getElementsByClassName('close')[0];
 
   // Adiciona um ouvinte de clique ao link de login
   loginLink.addEventListener('click', function (event) {
     // Impede o comportamento padrão do link (navegação)
     event.preventDefault();
 
-    // Exibe a mensagem de aviso
-    alert(
-      'Este recurso ainda não está disponível! Mas não se preocupe, em breve ele estará no ar!',
-    );
+    // Exibe o modal
+    modal.style.display = 'block';
+  });
+
+  // Adiciona um ouvinte de clique ao botão de fechar
+  closeBtn.addEventListener('click', function () {
+    // Oculta o modal ao clicar no botão de fechar
+    modal.style.display = 'none';
+  });
+
+  // Adiciona um ouvinte de clique fora do modal para fechá-lo
+  window.addEventListener('click', function (event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
   });
 });

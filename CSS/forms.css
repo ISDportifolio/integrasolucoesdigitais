@@ -120,10 +120,6 @@
   }
 }
 
-#mensagem {
-  color: var(--cor-p1);
-}
-
 .nao-visivel {
   display: none;
 }

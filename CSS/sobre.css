@@ -11,9 +11,9 @@
   background: linear-gradient(
     45deg,
     var(--cor-p1),
-    var(--cor-p2),
-    var(--cor-p3),
-    #fff620
+    #5f96c6,
+    #536bac,
+    var(--cor-p2)
   );
   background-size: 300% 300%;
   animation: colors 10s ease infinite;
@@ -38,8 +38,8 @@
 }
 
 .circle {
-  width: 400px;
-  height: 400px;
+  flex: 1;
+  aspect-ratio: 1 / 1; /* Mantém a proporção 1:1 (círculo) */
   background-color: var(--cor-10);
   border-radius: 50%;
   text-align: center;
@@ -51,6 +51,7 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 30px;
+  margin-right: 20px;
 }
 
 .circle-content {
@@ -97,6 +98,6 @@
 
   .circle {
     width: 100%;
-    margin-bottom: 20px;
+    margin-right: 0;
   }
 }
